@@ -28,7 +28,7 @@ app.add_middleware(
 # ---------------------------------
 # DB
 # ---------------------------------
-DB_PATH = os.environ.get("ADSTANDARD_DB_PATH", "adstandard.db")
+DB_PATH = os.environ.get("ADSTANDARD_DB_PATH", "/tmp/adstandard.db")
 
 def now_ms() -> int:
     return int(time.time() * 1000)
